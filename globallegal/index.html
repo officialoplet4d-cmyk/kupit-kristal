@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html amp lang="id-ID">
 
@@ -405,65 +406,54 @@
         }
     </style>
     <style amp-boilerplate>
+body {
+    -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+    -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+    -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+    animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+}
+@-webkit-keyframes -amp-start {
+    from {
+        visibility: hidden;
+    }
+    to {
+        visibility: visible;
+    }
+}
+@-moz-keyframes -amp-start {
+    from {
+        visibility: hidden;
+    }
+    to {
+        visibility: visible;
+    }
+}
+@-ms-keyframes -amp-start {
+    from {
+        visibility: hidden;
+    }
+    to {
+        visibility: visible;
+    }
+}
+@keyframes -amp-start {
+    from {
+        visibility: hidden;
+    }
+    to {
+        visibility: visible;
+    }
+}
+</style>
+<noscript>
+    <style amp-boilerplate>
         body {
-            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-            animation: -amp-start 8s steps(1, end) 0s 1 normal both
-        }
-
-        @-webkit-keyframes -amp-start {
-            from {
-                visibility: hidden
-            }
-
-            to {
-                visibility: visible
-            }
-        }
-
-        @-moz-keyframes -amp-start {
-            from {
-                visibility: hidden
-            }
-
-            to {
-                visibility: visible
-            }
-        }
-
-        @-ms-keyframes -amp-start {
-            from {
-                visibility: hidden
-            }
-
-            to {
-                visibility: visible
-            }
-        }
-
-        @keyframes -amp-start {
-            from {
-                visibility: hidden
-            }
-
-            to {
-                visibility: visible
-            }
+            -webkit-animation: none;
+            -moz-animation: none;
+            -ms-animation: none;
+            animation: none;
         }
     </style>
-    <noscript>
-        <style amp-boilerplate>
-            body {
-                -webkit-animation: none;
-                -moz-animation: none;
-                -ms-animation: none;
-                animation: none
-            }
-        </style>
-    </noscript>
-
-    </noscript>
 </head>
 
 <body>
@@ -487,28 +477,23 @@
         </amp-sidebar>
 
         <!-- WhatsApp Style Header -->
-        <div class="wa-chat-header">
-            <button class="sidebar-trigger" on="tap:sidebar.toggle">☰</button>
-            <div class="profile-pic-container">
-                <amp-img src="https://globallegal.site/images/unyil/favunyil.png" alt="Unyil4D Logo" width="42" height="42"
-                    layout="fixed">
-                    <!-- Fallback: gambar statis (BUKAN dynamic placeholder) -->
-                    <div fallback>
-                        <img src="https://placehold.co/42x42/d35400/white?text=U4D" width="42" height="42"
-                            alt="Fallback">
-                    </div>
-                </amp-img>
+            <div class="wa-chat-header">
+                <button class="sidebar-trigger" on="tap:sidebar.toggle">☰</button>
+                <div class="profile-pic-container">
+                    <amp-img src="https://globallegal.site/images/unyil/favunyil.png" alt="Unyil4D Logo" width="42" height="42"
+                        layout="fixed">
+                    </amp-img>
+                </div>
+                <div>
+                    <div class="contact-name">UNYIL4D</div>
+                    <div class="last-seen">Online</div>
+                </div>
+                <div class="wa-header-icons">
+                    <a href="https://shortq.link/linkunyil">📞</a>
+                    <a href="https://shortq.link/linkunyil">🔍</a>
+                    <a href="https://shortq.link/linkunyil">⋮</a>
+                </div>
             </div>
-            <div>
-                <div class="contact-name">UNYIL4D</div>
-                <div class="last-seen">Online</div>
-            </div>
-            <div class="wa-header-icons">
-                <a href="https://shortq.link/linkunyil">📞</a>
-                <a href="https://shortq.link/linkunyil">🔍</a>
-                <a href="https://shortq.link/linkunyil">⋮</a>
-            </div>
-        </div>
 
         <!-- Chat Area -->
         <div class="wa-chat-area">
@@ -518,10 +503,9 @@
                 <div class="chat-image-container">
                     <amp-img src="https://www.globallegal.site/images/unyil/unyil4d.webp" alt="Unyil 4D Banner"
                         width="400" height="400" layout="responsive">
-                        <div fallback>
-                            <img src="https://placehold.co/400x400/d35400/white?text=UNYIL4D" width="400" height="400"
-                                alt="Fallback Banner">
-                        </div>
+                        <amp-img fallback src="https://placehold.co/400x400/d35400/white?text=UNYIL4D" 
+                            width="400" height="400" layout="responsive">
+                        </amp-img>
                     </amp-img>
                 </div>
 
